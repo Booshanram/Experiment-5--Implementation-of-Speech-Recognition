@@ -16,6 +16,7 @@ Step 7:Print the transcribed text on the console if the transcribe process was s
 Step 8:Handle any potential errors during the transcribing process. If the audio is not clear, print "not clear". If there's an error while trying to retrieve the transcribed text from the Google speech recognizer, print "Couldnt get results from google speech recognizer".<br>
 
 ## Program:
+```
 import speech_recognition as sr
 
 # Assign a string variable "file" with the name of the audio file that you want to transcribe.
@@ -39,7 +40,7 @@ except sr.RequestError as e:
 # Print the text in the next lines.
 for line in text.splitlines():
     print(line)
-
+```
 ## Output:
 ![image](https://github.com/Booshanram/Experiment-5--Implementation-of-Speech-Recognition/assets/113018636/fc9f342f-83a6-462d-b3f6-e18c9b5789f6)
 
